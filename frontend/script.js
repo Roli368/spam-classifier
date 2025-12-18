@@ -19,7 +19,7 @@ function checkSpam() {
   resultText.innerText = "Checking...";
   confidenceText.innerText = "";
 
-  fetch("http://127.0.0.1:8000/predict", {
+  fetch("https://spam-classifier-j3al.onrender.com/predict", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
